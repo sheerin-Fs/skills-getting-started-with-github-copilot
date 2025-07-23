@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
-        // Participants section HTML
-        let participantsHTML = `
+// Participants section
+        const participantsHTML = `
           <div class="activity-participants">
             <h5>Participants</h5>
             <ul>
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
           </div>
         `;
-
         activityCard.innerHTML = `
           <h4>${name}</h4>
           <p>${details.description}</p>
